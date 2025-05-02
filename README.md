@@ -1,42 +1,52 @@
 # ArchitectureBench
 
-Comparador técnico de arquitecturas móviles aplicadas a SwiftUI.  
-Cada caso demuestra cómo resolver el mismo problema con diferentes patrones.
+**Comparativa estructurada entre MVVM, VIPER y Clean Architecture aplicada a un mismo flujo.**
+
+`ArchitectureBench` permite visualizar, implementar y analizar tres arquitecturas móviles en un mismo caso de uso. Ideal para debates técnicos, capacitaciones y validaciones arquitectónicas.
 
 ---
 
 ## Propósito
 
-Explorar, comparar y aprender desde la práctica las fortalezas y límites de cada arquitectura.
+- Evaluar ventajas y compromisos de distintas arquitecturas.
+- Visualizar su impacto sobre testabilidad, legibilidad y escalabilidad.
+- Fomentar análisis técnico sobre patrones de diseño.
 
 ---
 
-## Arquitecturas incluidas
+## Contenido
 
-- **MVVM**  
-  Flujo directo y reactivo. Ideal para apps simples.
-
-- **VIPER adaptado a SwiftUI**  
-  Separación rigurosa de responsabilidades. Escalable.
-
-- **Clean Architecture**  
-  Enfoque sostenible, orientado a dominio.
+- Implementaciones completas en MVVM, VIPER y Clean Architecture.
+- Casos de uso idénticos con separación clara de capas.
+- Utilización de dependencias comunes para comparación justa.
+- Documentación con principios aplicados y decisiones técnicas.
 
 ---
 
-## Escenario común
+## Pruebas
 
-Todas las arquitecturas resuelven un mismo flujo de ejemplo:
-- Listado
-- Creación
-- Detalle
-- Edición
+| Arquitectura   | Cobertura de prueba   |
+|----------------|------------------------|
+| MVVM           | Unitarias y de integración |
+| VIPER          | Unitarias y mocks      |
+| Clean Arch     | Unitarias + pruebas de capa |
 
 ---
 
-## Compará decisiones como:
+## Integración
 
-- Inyección de dependencias
-- Flujo de datos
-- Testing
-- División de capas
+Se accede desde `ProductSuiteApp` como flujo seleccionable. Incluye navegación interna para elegir la arquitectura deseada.
+
+---
+
+## Requisitos
+
+- iOS 15+
+- Swift 6
+- Swift Package Manager
+
+---
+
+## Licencia
+
+MIT © Matías Adrián Molina
